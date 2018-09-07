@@ -1,6 +1,7 @@
 # Matt Solly
-Steps -
-NPM Install
-gulp
+Flickr Photo Stream
+## Steps To set up -
 
-Done :)
+* [NPM Install]
+* [gulp]
+* [Done :)]
