@@ -25,7 +25,7 @@ function updatePhotoDescriptionAsync(photoId, photoDescription) {
 		}
 
 		//Adding any descriptions
-    	photoDescription.html(response.photo.description._content);
+    	photoDescription.html($.trim(response.photo.description._content));
 
 		deferred.resolve();
 	})
@@ -54,7 +54,7 @@ function updateTagsAsync(photoId, tags, tagWrapper) {
 	.done(function (response) {
 		//finding the tags associated with the specific image and adding them to an array
 		for (var i = 0; i < response.photo.tags.tag.length; i++) {
-			tags.push(response.photo.tags.tag[i].raw);
+			tags.push($.trim(response.photo.tags.tag[i].raw));
 		}
 
 		//if there is anything in the array create a string
@@ -98,7 +98,7 @@ function updateAuthorInfoAsync(userId, author) {
 			return;
 		}
 		//Setting the username
-    	author.html(response.person.username._content);
+    	author.html($.trim(response.person.username._content));
 
 		deferred.resolve();
 	})
@@ -116,6 +116,7 @@ $(function () {
 	        method: "flickr.photos.getRecent",
 	        api_key: APIKey,
 	        isfamily: 1,
+	        safe_search: 1,
 	        format: "json",
 	        nojsoncallback: 1
 	    },
