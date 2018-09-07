@@ -170,8 +170,6 @@ ClientBin/
 # Front End
 node_modules/
 bower_components/
-dist/
-
 
 # RIA/Silverlight projects
 Generated_Code/
