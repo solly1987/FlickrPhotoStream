@@ -1,5 +1,5 @@
 //Global variables
-var APIKey = "dbe4f7bffc862bf1cf1b667faf03a226",
+var APIKey = "7a7585ce79a90f3c553261c9b42727d6",
 	flickrURL = "https://api.flickr.com/services/rest/";
 
 //Getting the photo information
