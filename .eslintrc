@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "comma-dangle": 0,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    no-console: 1,
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "babelify": true,
+    "FB": true,
+    "ga": true,
+    "typeahead": true,
+    "youtube": true, //for videojs youtube plugin
+    "videojs": true,
+    "cloudinary": true
+  },
+  "extends": "eslint:recommended"
+}

@@ -1,2 +1,1 @@
-# FlickrPhotoStream
-A Flickr Photo Stream
+# Matt Solly
